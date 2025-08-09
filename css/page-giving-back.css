@@ -1,0 +1,77 @@
+.intro {
+  margin: 2rem 2rem;
+  max-width: 44rem;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+.intro p:last-of-type {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  margin-top: .5rem;
+}
+
+.sections-holder {
+  background-color: rgb(250, 250, 250);
+}
+
+.sections {
+  margin: 1rem 2rem;
+  padding: 1rem 0;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: rgb(28, 25, 162);
+  margin-bottom: 1.5rem;
+}
+
+.section p {
+  margin-bottom: 3rem;
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  font-size: 1.25rem;
+  color: #5f5f5f;
+  font-weight: 300;
+  line-height: 2rem;
+
+}
+
+@media screen and (width > 48rem) {
+  .intro-holder {
+    width: 484px;
+    margin-left: 2rem;
+  }
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .section {
+    width: 40%;
+    margin: 1rem 2rem;
+  }
+}
+
+@media screen and (width > 64rem) {
+  .intro {
+    margin: 1rem 2rem 2rem;
+  }
+  .intro-holder {
+    width: 972px;
+    margin: 1rem auto 2rem;
+  }
+  .sections-holder {
+    padding-top: 2rem;
+  }
+  .sections {
+    width: 944px;
+    margin: 0 auto;
+  }
+}

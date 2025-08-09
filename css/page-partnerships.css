@@ -1,0 +1,98 @@
+.intro {
+  margin: 2rem 2rem;
+  max-width: 44rem;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+.intro p:last-of-type {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  margin-top: .5rem;
+  font-weight: 300;
+}
+
+.sections-holder {
+  background-color: rgb(250, 250, 250);
+}
+
+.sections {
+  margin: 1rem 2rem;
+  padding: 1rem 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 3rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  color: rgb(28, 25, 162);
+}
+
+.section span {
+  display: flex;
+  flex-direction: column;
+}
+
+.section span p, .section p {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.section span img {
+  width: min-content;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.section:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.horizontal-barrier {
+  width: 100px;
+}
+
+@media screen and (width > 48rem) {
+  .intro-holder {
+    width: 484px;
+  }
+  .section span img {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (width > 64rem) {
+  .intro-holder {
+    width: 972px;
+    margin: 0 auto;
+  }
+  .sections {
+    width: 902px;
+    margin: 0 auto;
+  }
+  .section span {
+    flex-direction: row;
+  }
+  .section span p, .section p {
+    width: 64%;
+    margin-right: 4rem;
+  }
+  .section span img {
+    margin-top: 0;
+  }
+
+}

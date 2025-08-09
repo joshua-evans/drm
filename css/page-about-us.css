@@ -1,0 +1,207 @@
+main {
+  margin: 0 0 3rem;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 86%;
+}
+
+.about-us-section h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.about-us-section p {
+  font-size: 1.25rem;
+}
+
+.about-us-section ul {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.org-name {
+  margin: .5rem 0;
+  text-align: center;
+}
+
+.race-director-section {
+  margin: 3rem 0 2rem;
+}
+
+.race-director-section img {
+  display: flex;
+  justify-self: end;
+}
+
+.race-director-name {
+  font-size: 1.25rem;
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+}
+
+.race-director-cert {
+  font-size: 1.25rem;
+  color: rgb(28, 25, 162);
+}
+
+.accomplishments-section {
+  margin: 0 0 3rem;
+  background-color: rgb(250, 250, 250);
+  padding: 2rem 0 1rem;
+}
+
+.accomplishments {
+  margin: 0 auto;
+  width: 86%;
+}
+
+.accomplishment h4 {
+  font-size: 1.25rem;
+  color: rgb(28, 25, 162);
+}
+
+.accomplishment span p {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.accomplishment span p:nth-of-type(2) {
+  text-wrap: nowrap;
+}
+
+.accomplishment > div:last-of-type {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  font-size: 1.25rem;
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+}
+
+.accomplishment-barrier {
+  width: 82px;
+  height: 7px;
+  border-top: 7px solid rgb(230, 225, 225);
+  margin: 1.5rem 0;
+}
+
+.wkrc-link {
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 1rem 0 2rem;
+  padding: .75rem 1rem;
+  font-size: 1.25rem;
+}
+
+.other-accomplishments-section {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.other-accomplishment {
+  margin-bottom: 3rem; 
+}
+
+.other-accomplishment > p {
+  font-size: 1.5rem;
+  color: rgb(28, 25, 162);
+}
+
+.other-accomplishment li {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  font-size: 1.25rem;
+  margin: 1rem 2rem;
+  color: rgb(94, 93, 93);
+  font-weight: 100;
+}
+
+@media screen and (width > 36rem) {
+  .race-director-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (width > 48rem) {
+  .about-us-container {
+    flex-direction: row;
+    margin: 0 auto 2.5rem;
+  }
+  .about-us-section {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .race-director-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+  .accomplishments-section {
+    padding: 2.5rem 0 1rem;
+  }
+  .accomplishments {
+    display: flex;
+  }
+  .accomplishment {
+    text-align: center;
+    flex: 1;
+  }
+  .wkrc-link {
+    margin: 1rem auto 2rem;
+  }
+  .accomplishment-barrier {
+    transform: rotate(90deg);
+    --comp-rotate-z: 90deg;
+    border-top: 7px solid rgb(230, 225, 225);
+    margin-top: 5rem;
+    margin-left: -.5rem;
+  }
+  .other-accomplishments-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2rem;
+    width: 53%;
+  }
+  .other-accomplishment {
+    margin-bottom: 0rem;
+  }
+  .other-accomplishment ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .other-accomplishment:first-of-type ul {
+    height: 18rem;
+  }
+}
+
+@media screen and (width > 64rem) {
+  .about-us-container {
+    max-width: 1000px;
+  }
+  .accomplishments {
+    max-width: 1000px;
+  }
+  .other-accomplishments-section {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+    min-width: 844px;
+  }
+  .other-accomplishment:first-of-type {
+    margin-left: 1rem;
+  }
+  .other-accomplishment:last-of-type p:first-of-type {
+    margin-left: 4rem;
+  }
+}

@@ -1,0 +1,72 @@
+main {
+  background-image: url("../images/utils/contact-us-background.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-self: center;
+  max-width: 700px;
+  margin: 7rem 0 2rem;
+  padding: 1rem 0;
+}
+
+.contact-us-form h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.form-holder {
+  display: flex;
+  margin: 0 1rem;
+}
+
+.form-holder > div:first-of-type div {
+  margin: 1rem;
+}
+
+.form-holder > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-holder > div:last-of-type {
+  width: 50%;
+  text-align: center;
+}
+
+
+.form-holder > div:first-of-type p:first-of-type {
+  color: rgb(28, 25, 162);
+  font-size: 1.25rem;
+}
+
+.form-holder > div:first-of-type p:last-of-type {
+  font-size: 1.1rem;
+  font-family: "poppins-ultra-light", "poppins", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+@media screen and (width <= 48rem) {
+  .contact-us-form {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  .form-holder {
+    flex-direction: column;
+  }
+  .form-holder > div:first-of-type, .form-holder > div:last-of-type {
+    width: 100%;
+  }
+  .form-holder > div:last-of-type {
+    margin: 3rem 0;
+  }
+}

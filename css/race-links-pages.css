@@ -1,0 +1,43 @@
+.race-maps-container, .crew-info-container {
+  margin: 2rem 1rem;
+}
+
+.race-name-heading {
+  color: rgb(28, 25, 162);
+  font-size: 1.5rem;
+}
+
+.race-link-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 1rem 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.race-link-button {
+  margin: 1.5rem 1rem;
+  min-width: 120px;
+  font-size: 1.1rem;
+}
+
+@media screen and (width > 40rem) {
+  .race-link-list {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (width > 40rem) {
+  .race-maps-container, .crew-info-container {
+    margin: 2rem auto;
+    width: 600px;
+  }
+}
+
+@media screen and (width > 64rem) {
+  .race-maps-container, .crew-info-container {
+    width: 900px;
+  }
+}
+

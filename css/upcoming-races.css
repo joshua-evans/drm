@@ -1,0 +1,65 @@
+.upcoming-races-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upcoming-races-title {
+  font-size: 2rem;
+  color: rgb(44, 44, 43);
+  margin: 1em 0 .5rem;
+}
+
+.upcoming-race-title {
+  font-size: 22px;
+  color: rgb(28, 25, 162);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 13rem;
+  margin: 0 auto;
+}
+
+.upcoming-race {
+  margin: .5em 0 2rem;
+}
+
+.upcoming-race p {
+  font-size: 18px;
+  margin: .5em 0;
+  text-align: center;
+}
+
+.upcoming-race-register-link {
+  display: block;
+  text-align: center;
+  width: 7rem;
+  margin: 1rem auto 0;
+}
+
+
+@media screen and (width > 48rem) {
+  .upcoming-races-container {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    height: fit-content;
+    background-color: #FAFAFA;
+  }
+  .upcoming-races-title {
+    font-size: 1.5rem;
+    color: rgb(44, 44, 43);
+    margin: .5rem 0 1rem;
+  }
+}
+
+@media screen and (width > 70em) {
+  .upcoming-races-container {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (width >= 75em) {
+  .upcoming-races-container {
+      margin-right: 0rem;
+  }
+}

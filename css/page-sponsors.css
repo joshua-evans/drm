@@ -1,0 +1,169 @@
+.intro {
+  margin: 2rem 2rem;
+  max-width: 44rem;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.sponsor:nth-of-type(odd) {
+  background-color: rgb(241, 241, 241);
+}
+
+.sponsor:nth-of-type(even) {
+  background-color: rgb(219, 219, 219);
+}
+
+.sponsor div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+  margin: 0 auto;
+  padding: 2rem 0 0;
+}
+
+.sponsor div > p:first-of-type {
+  font-size: 1.5rem;
+  color: rgb(28, 25, 162);
+  margin-bottom: 1.5rem;
+}
+
+.sponsor div p {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.sponsor div > span:first-of-type {
+  margin: 1rem auto;
+}
+
+.sponsor div span p {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  margin: .5rem 0;
+}
+
+.sponsor-link {
+  display: block;
+  width: 120px;
+  margin: 2rem 0 2rem;
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.sponsor-text-link {
+  color: #000;
+  font-weight: 500;    
+}
+
+span.discount-code-text p {
+  color: #000;
+  font-weight: 500;
+}
+
+.sponsor-logo {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+}
+
+.sponsor img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#sword-logo {
+  width: 88%;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsor-contact-us {
+  margin: 3rem 2rem;
+}
+
+.sponsor-contact-us h2 {
+  font-size: 1.5rem;
+  color: rgb(28, 25, 162);
+}
+
+.sponsor-contact-us span p {
+  font-family: "poppins-extra-light", "poppins", sans-serif;
+  font-size: 1.1rem;
+  margin: .5rem 0 1rem;
+} 
+
+.sponsor-contact-us span p:last-of-type {
+  font-weight: 700;
+  margin-top: 1.5rem;
+} 
+
+
+
+@media screen and (width > 48rem) {
+  .intro-holder {
+    width: 484px;
+    margin-left: 2rem;
+  }
+  .sponsor {
+    flex-direction: row;
+    min-height: 400px;
+  }
+  .sponsor div:first-of-type {
+    margin: 0 2rem;
+    justify-content: center;
+  }
+  .sponsor-logo {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+  }
+  #sword-logo {
+    width: 440px;
+    height: auto;
+    margin: auto;
+  }
+  .sponsor img {
+    height: auto;
+    margin: auto;
+    width: 50%;
+  }
+  .sponsor-contact-us {
+    flex-direction: row;
+    display: flex;
+        margin: 3rem 0;
+  }
+  .sponsor-contact-us h2 {
+    font-size: 2rem;
+    text-align: center;
+    width: 50%;
+    align-self: center;
+  }
+  .sponsor-contact-us span {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (width > 64rem) {
+  .intro-holder {
+    width: 968px;
+    margin: 1rem auto 0;
+  }
+  .sponsors-holder {
+    width: 904px;
+    margin: 0 auto;
+  }
+  .sponsor-contact-us {
+    width: 904px;
+    margin: 1rem auto;
+  }
+}

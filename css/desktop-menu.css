@@ -1,0 +1,70 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.dropdown {
+  display: inline-flex;
+  margin: 0 .75rem;
+  justify-content: end;
+}
+
+.dropdown a, .dropdown p {
+  text-decoration: none;
+  color: rgb(44, 44, 43);
+  /*line-height: 30px;*/
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "poppins-semi-bold", "poppins", sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  text-align: right;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-right: -.5rem;
+  padding: .5rem .5rem .5rem;
+}
+
+.dropdown-content a {
+  margin: .5rem 0 .5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+@media screen and (width > 64em) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1.1rem 0 .5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    padding: 0 25%;
+  }
+  .header-logo {
+    margin-right: 0;
+  }
+  .desktop-menu {
+    display: flex;
+    text-wrap: nowrap;
+  }
+}
+
+@media screen and (width > 64em) {
+  .header-logo {
+    margin-right: 4rem;
+  }
+}

@@ -1,0 +1,111 @@
+/* Style Reset */
+* {
+	vertical-align: baseline;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+strong {
+  color: #000;
+}
+
+/* Flex */
+.flex-column, .list-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row, .list-row {
+  display: flex;
+  flex-direction: row;
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "poppins-semi-bold", "poppins", sans-serif;
+  color: rgb(44, 44, 43);
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* Buttons */
+.link-button {
+  background-color: rgb(28, 25, 162);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.text-link {
+  text-decoration: none;
+  color: rgb(28, 25, 162);
+  font-weight: 500;
+}
+
+
+/* Content order */
+main {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-information {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 .5rem;
+}
+
+
+.vertical-barrier {
+  width: 82px;
+  height: 7px;
+  transform: rotate(90deg);
+  --comp-rotate-z: 90deg;
+  border-top: 7px solid rgb(230, 225, 225);
+}
+
+.horizontal-barrier {
+  width: 82px;
+  height: 7px;
+  border-top: 7px solid rgb(28, 25, 162);
+  margin: 1.5rem 0;
+}
+
+@media screen and (width >= 48rem) {
+  .main-information {
+    flex-direction: row;
+  }
+}
+
+@media screen and (width > 70em) {
+  .main-information {
+    width:  1148px;
+    margin: 2rem auto 0;
+  }
+}

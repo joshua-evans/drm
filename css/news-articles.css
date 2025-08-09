@@ -1,0 +1,111 @@
+.article-previews {
+  font-family: "metrolpolis", sans-serif;
+}
+.article-preview {
+  margin: 2em 0 2rem;
+}
+.article-previews-title {
+  font-size: 2rem;
+  text-align: center;
+}
+.article-preview-title {
+  font-size: 22px;
+  width: 75%;
+  display: block;
+  margin: 1em auto .75rem;
+}
+.article-preview-media, .article-preview-media img, .article-preview-media iframe {
+  width: 100%;
+  display: flex;
+}
+.article-preview-byline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2em 0 0 4rem;
+}
+.article-preview-byline-text {
+  margin-left: 1rem;
+  font-size: 12px;
+}
+.article-preview-byline-text p {
+  margin: 0;
+}
+.article-preview-text-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(241, 241, 241, 0.75);
+}
+.article-preview-text {
+  width: 75%;
+  display: block;
+  margin: 0 auto 4rem;
+  line-height: 2rem;
+}
+
+@media screen and (width > 48rem) {
+  .article-previews {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5rem;
+    margin-left: 2rem;
+  }
+  .article-preview {
+    width: 90%;
+    margin: 0 0 1rem;
+  }
+  .article-previews-title {
+    text-align: start;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1.25rem;
+  }
+  .article-preview-media {
+    width: 90%;
+    display: flex;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (width > 70em) {
+  .article-previews {
+    margin-right: 4rem;
+    margin-left: 2rem;
+  }
+  .article-preview {
+    flex-direction: row;
+    display: flex;
+    width: 100%
+  }
+  .article-preview-byline {
+      margin: 2em 0 0 3rem;
+  }
+  .article-preview-media {
+    width: revert-layer;
+  }
+  .article-image {
+    max-width: 421px;
+  }
+  .article-preview-title {
+    margin: 1em 0 .75rem 3rem;
+  }
+  .article-preview-text {
+    width: 80%;
+    display: block;
+    margin: 0 0 4rem 3rem;
+  }
+  .article-preview-media, .article-preview-media img, .article-preview-media iframe {
+    width: revert-layer;
+  }
+}
+
+@media screen and (width >= 75em) {
+  .article-previews {
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+  }
+  .article-preview:first-of-type {
+    margin-bottom: 2rem;
+  }
+}
