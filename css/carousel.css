@@ -1,3 +1,48 @@
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -600%;
+  }
+  98% {
+    left: -600%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
 /* Record Image and Text */
 .record-image {
   width: 100%;
@@ -78,10 +123,11 @@
   }
 
   .record-image-text {
-    margin-top: -1rem;
+    margin-top: 0;
     font-size: 1.3rem;
-    align-self: center;
+    /*align-self: center;*/
     padding-left: 0;
+    padding-top: 4.5rem;
   }
 }
 
@@ -105,50 +151,7 @@
 
 
 /* Main Carousel */
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
 
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -600%;
-  }
-  98% {
-    left: -600%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
 
 ol, li {
   list-style: none;
@@ -202,7 +205,7 @@ ol, li {
 .carousel__snapper {
   animation-name: tonext, snap;
   animation-timing-function: ease;
-  animation-duration: 2s;/*10s;*/
+  animation-duration: 2s;
   animation-iteration-count: 3;
 }
 
@@ -238,22 +241,7 @@ ol, li {
   border: 0.25rem solid transparent;
   border-radius: 50%;
   font-size: 0;
-  transition: transform 0.1s;
-}
-
-#carousel::before,
-#carousel::after,
-.carousel__prev,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 37.5%;
-  /*width: 4rem;
-  height: 4rem;*/
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
+  /*transition: transform 0.1s;*/
 }
 
 #carousel::before,
@@ -281,13 +269,7 @@ ol, li {
   pointer-events: none;
 }
 
-#carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
-}
 
-#carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-}
 
 @media screen and (width > 48rem) {
   .carousel__slide {
