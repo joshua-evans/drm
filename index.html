@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="css/upcoming-races.css" />
 
     <link rel="icon" type="image/x-icon" href="images/favicons/favicon_16_16.png">
-
-
   </head>
   <body>
     <div class="content-wrapper">
@@ -130,8 +128,8 @@
         <div class="dropdown">
           <p>Runner Instructions</p>
           <div class="dropdown-content">
-            <a href="pages/instructions-tunnel-hill.html">Tunnel Hill</a>
-            <a href="pages/instructions-land-between-the-lakes.html">Land Between the Lakes</a>
+            <a href="pages/instructions/tunnel-hill.html">Tunnel Hill</a>
+            <a href="pages/instructions/land-between-the-lakes.html">Land Between the Lakes</a>
           </div>
         </div>
         <div class="dropdown">
@@ -170,7 +168,7 @@
     </header>
   
     <main>
-      <div class="carousel" aria-label="Gallery">
+      <div id="carousel" aria-label="Gallery">
         <ol class="carousel__viewport">
           <li id="carousel__slide1"
               tabindex="0"
@@ -201,7 +199,7 @@
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper">
+            <div id="snapper1" class="carousel__snapper">
               <a href="#carousel__slide4"
                 class="carousel__prev">Go to last slide</a>
               <a href="#carousel__slide2"
@@ -237,7 +235,7 @@
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper"></div>
+            <div id="snapper2" class="carousel__snapper"></div>
             <a href="#carousel__slide1"
               class="carousel__prev">Go to previous slide</a>
             <a href="#carousel__slide3"
@@ -273,7 +271,7 @@
               </tr>
             </table>
             </p>
-            <div class="carousel__snapper"></div>
+            <div id="snapper3" class="carousel__snapper"></div>
             <a href="#carousel__slide2"
               class="carousel__prev">Go to previous slide</a>
             <a href="#carousel__slide4"
@@ -308,7 +306,7 @@
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper"></div>
+            <div id="snapper4" class="carousel__snapper"></div>
             <a href="#carousel__slide3"
               class="carousel__prev">Go to previous slide</a>
             <a href="#carousel__slide1"
@@ -317,19 +315,19 @@
         </ol>
         <aside class="carousel__navigation">
           <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
+            <li id="carousel-nav-1" class="carousel__navigation-item">
               <a href="#carousel__slide1"
                 class="carousel__navigation-button">Go to slide 1</a>
             </li>
-            <li class="carousel__navigation-item">
+            <li id="carousel-nav-2" class="carousel__navigation-item">
               <a href="#carousel__slide2"
                 class="carousel__navigation-button">Go to slide 2</a>
             </li>
-            <li class="carousel__navigation-item">
+            <li id="carousel-nav-3" class="carousel__navigation-item">
               <a href="#carousel__slide3"
                 class="carousel__navigation-button">Go to slide 3</a>
             </li>
-            <li class="carousel__navigation-item">
+            <li id="carousel-nav-4" class="carousel__navigation-item">
               <a href="#carousel__slide4"
                 class="carousel__navigation-button">Go to slide 4</a>
             </li>
@@ -349,14 +347,14 @@
             
             <span class="article-preview-text-container">
               <div class="article-preview-byline">
-                <img class="article-preview-byline-image" src="images/utils/silhouette_image.png" width="32" height="32" />
+                <a href=""><img class="article-preview-byline-image" src="images/utils/silhouette_image.png" width="32" height="32" /></a>
                 <div class="article-preview-byline-text">
                   <p>Steve Durbin</p>
                   <p>Jan 13 - 1 min read</p>
                 </div>
               </div>
-              <h2 class="article-preview-title">Three World Records!</h2>            
-              <p class="article-preview-text">Congrats to Courtney Olsen who shattered Ann Trason's long standing world record in the 50 mile run. Courtney's time? 5:31:56. Charlie...</p>
+              <h2 class="article-preview-title"><a href="">Three World Records!</a></h2>
+              <p class="article-preview-text"><a href="">Congrats to Courtney Olsen who shattered Ann Trason's long standing world record in the 50 mile run. Courtney's time? 5:31:56. Charlie...</a></p>
               <hr class="article-preview-horizontal-divider"/>
             </span>
           </div>
@@ -374,8 +372,8 @@
                   <p>Dec 20, 2018 - 1 min read</p>
                 </div>
               </div>
-              <h2 class="article-preview-title">Zach Bitter sets a World's Best for 100 miles off road at Tunnel Hill. 12:08:36!</h2>
-              <p class="article-preview-text">Conor Holt, aka Camille Herron's husband, and coach, interviews ultra running star, Zach Bitter after his world best 100 for off-road,...</p>
+              <h2 class="article-preview-title"><a href="">Zach Bitter sets a World's Best for 100 miles off road at Tunnel Hill. 12:08:36!</a></h2>
+              <p class="article-preview-text"><a href="">Conor Holt, aka Camille Herron's husband, and coach, interviews ultra running star, Zach Bitter after his world best 100 for off-road,...</a></p>
               <hr class="article-preview-horizontal-divider"/>
             </span>
           </div>
@@ -460,4 +458,5 @@
  
     </div> <!-- content-wrapper -->
   </body>
+  <script src="js/carousel.js"></script>
 </html>

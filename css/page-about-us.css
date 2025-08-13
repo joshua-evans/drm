@@ -18,6 +18,10 @@ main {
   font-size: 1.25rem;
 }
 
+.about-us-section p:last-of-type {
+  margin-top: 1rem;
+}
+
 .about-us-section ul {
   margin: 1rem 0;
   list-style: none;

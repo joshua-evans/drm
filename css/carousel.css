@@ -3,13 +3,13 @@
   width: 100%;
 }
 .record-image-text {
-  margin: .5em auto 0;
   text-align: center;
   color: white;
-  padding-left: 3rem;
   table-layout: fixed;
   width: 75%;
-  margin: 2em auto 0;
+  margin: 2em auto 1.5rem;
+  font-family: "metropolis", sans-serif;
+  font-weight: 100;
 }
 
 .record-image-name {
@@ -125,10 +125,10 @@
     left: 0;
   }
   95% {
-    left: -300%;
+    left: -600%;
   }
   98% {
-    left: -300%;
+    left: -600%;
   }
   99% {
     left: 0;
@@ -156,12 +156,13 @@ ol, li {
   padding: 0;
 }
 
-.carousel {
+/*#carousel table {
   margin: 0 0 .5rem;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
   font-family: "metropolis", sans-serif;
-}
+  font-weight: 100;
+}*/
 
 .carousel__viewport {
   top: 0;
@@ -173,6 +174,7 @@ ol, li {
   counter-reset: itrem;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  position: relative;
 }
 
 .carousel__slide {
@@ -193,21 +195,16 @@ ol, li {
   scroll-snap-align: center;
 }
 
-/*@media (hover: hover){*/
-  .carousel {
-    display: block;
-  }
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
+#carousel {
+  display: block;
+}
 
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-/*}*/
+.carousel__snapper {
+  animation-name: tonext, snap;
+  animation-timing-function: ease;
+  animation-duration: 2s;/*10s;*/
+  animation-iteration-count: 3;
+}
 
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
@@ -215,8 +212,8 @@ ol, li {
   }
 }
 
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
+#carousel:hover .carousel__snapper,
+#carousel:focus-within .carousel__snapper {
   animation-name: none;
 }
 
@@ -244,8 +241,8 @@ ol, li {
   transition: transform 0.1s;
 }
 
-.carousel::before,
-.carousel::after,
+#carousel::before,
+#carousel::after,
 .carousel__prev,
 .carousel__next {
   position: absolute;
@@ -259,18 +256,18 @@ ol, li {
   outline: 0;
 }
 
-.carousel::before,
+#carousel::before,
 .carousel__prev {
   left: -1rem;
 }
 
-.carousel::after,
+#carousel::after,
 .carousel__next {
   right: -1rem;
 }
 
-.carousel::before,
-.carousel::after {
+#carousel::before,
+#carousel::after {
   content: '';
   z-index: 1;
   background-color: #333;
@@ -284,11 +281,11 @@ ol, li {
   pointer-events: none;
 }
 
-.carousel::before {
+#carousel::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-.carousel::after {
+#carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
@@ -305,7 +302,7 @@ ol, li {
 }
 
 @media screen and (width > 75rem) {
-  .carousel {
+  #carousel {
     max-height: 400px;
     max-width: 1200px;
     margin: 2rem auto 0;

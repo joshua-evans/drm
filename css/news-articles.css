@@ -1,12 +1,32 @@
 .article-previews {
   font-family: "metrolpolis", sans-serif;
+  margin-top: 2rem;
 }
 .article-preview {
   margin: 2em 0 2rem;
 }
+
+.article-preview-title a, .article-preview-text a {
+  text-decoration: none;
+  color: rgb(44, 44, 43);
+  font-weight: 100;
+}
+
+.article-preview-title:hover a, .article-preview-text:hover a {
+  color: rgb(28, 25, 162);
+  transition: color 1s;
+}
+
+.article-preview-title:hover + .article-preview-text a, .article-preview-title:has(+ .article-preview-text:hover) a {
+  color: rgb(28, 25, 162);
+  transition: color 1s;
+}
+
+
 .article-previews-title {
   font-size: 2rem;
   text-align: center;
+  font-weight: 400;
 }
 .article-preview-title {
   font-size: 22px;
@@ -49,6 +69,8 @@
     flex-direction: column;
     margin-right: 2.5rem;
     margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
   }
   .article-preview {
     width: 90%;

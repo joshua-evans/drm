@@ -45,6 +45,9 @@
     height: fit-content;
     background-color: #FAFAFA;
   }
+  .upcoming-race:last-of-type {
+    margin-bottom: 1rem;
+  }
   .upcoming-races-title {
     font-size: 1.5rem;
     color: rgb(44, 44, 43);

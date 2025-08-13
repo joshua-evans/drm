@@ -1,9 +1,14 @@
 
+.article-preview, .article-preview:first-of-type {
+  margin-bottom: 3rem;
+}
+
 .article-previews-title {
   font-size: 2rem;
   text-align: left;
   margin: 2rem 0 0 1rem;
 }
+
 
 @media screen and (width > 48rem) {
   .article-previews {
