@@ -18,7 +18,7 @@ const handleCarouselNavigation = () => {
       Array.from(carouselItems).forEach((item) => {
         item.style.transform = `translateX(-${index*100}%)`
       });
-      setInterval(() => pauseCarousel = false, 2000);
+      setInterval(() => pauseCarousel = false, 30000);
     })
   });
 }
@@ -41,7 +41,7 @@ const runCarousel = () => {
         slideIndex=0;
       }
     }
-  }, 3000)
+  }, 10000)
   
 }
 

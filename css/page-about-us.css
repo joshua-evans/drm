@@ -16,6 +16,7 @@ main {
 
 .about-us-section p {
   font-size: 1.25rem;
+  font-family: "poppins-extra-light", "poppins", sans-serif;
 }
 
 .about-us-section p:last-of-type {
@@ -23,7 +24,7 @@ main {
 }
 
 .about-us-section ul {
-  margin: 1rem 0;
+  margin: 1rem 3rem 1rem 0;
   list-style: none;
 }
 
@@ -199,8 +200,8 @@ main {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 1000px;
-    min-width: 844px;
+    max-width: 962px;
+    width: 92%;
   }
   .other-accomplishment:first-of-type {
     margin-left: 1rem;

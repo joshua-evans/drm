@@ -12,7 +12,7 @@ main {
   flex-direction: column;
   background-color: #fff;
   align-self: center;
-  max-width: 700px;
+  max-width: 800px;
   margin: 7rem 0 2rem;
   padding: 1rem 0;
 }
@@ -80,6 +80,9 @@ form input[type="submit"] {
 }
 
 @media screen and (width <= 48rem) {
+  main {
+    background-size: inherit;
+  }
   .contact-us-form {
     width: 90%;
     margin-top: 3rem;

@@ -62,12 +62,12 @@ header, footer {
   padding: 1rem 2rem;
   text-decoration: none;
   text-align: center;
-  transition: ease 1s;
+  transition: ease 500ms;
 }
 
 .link-button:hover {
   background-color: rgb(44, 44, 43);
-  transition: ease 1s;
+  transition: ease 500ms;
 }
 
 .text-link {
