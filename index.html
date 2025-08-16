@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/desktop-menu.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/main.css" />
-    
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/news-articles.css" />
     <link rel="stylesheet" href="css/upcoming-races.css" />
-
     <link rel="icon" type="image/x-icon" href="images/favicons/favicon_16_16.png">
+    <title>Home | Durbin Race Management</title>
   </head>
   <body>
     <div class="content-wrapper">
 
     <header>
+      <!-- Mobile menu -->
       <img class="header-logo" src="images/header-logo.jpg" alt="Durbin Race Management logo" width="116">
       
       <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn" />
@@ -31,7 +31,7 @@
         </div>
 
         <div class="mobile-dropdown">
-          <div class="main-nav-item"><a class="nav-item" href="our-races.html">Our Races</a></div>
+          <div class="main-nav-item"><a class="nav-item" href="pages/our-races.html">Our Races</a></div>
         </div>
 
         <div class="mobile-dropdown has-dropdown-content">
@@ -40,8 +40,8 @@
             Course Maps/Crew Info
           </label>
           <div class="mobile-dropdown-content">
-              <a href="course-maps.html">Course Maps</a>
-              <a href="aid-and-crew.html">Aid Station & Crew Info</a>
+              <a href="pages/info/course-maps.html">Course Maps</a>
+              <a href="pages/info/aid-and-crew.html">Aid Station & Crew Info</a>
           </div>
         </div>
 
@@ -51,8 +51,8 @@
             Runner Instructions
           </label>
           <div class="mobile-dropdown-content">
-            <a href="instructions-tunnel-hill.html">Tunnel Hill</a>
-            <a href="instructions-land-between-the-lakes.html">Land Between the Lakes</a>
+            <a href="pages/instructions/tunnel-hill.html">Tunnel Hill</a>
+            <a href="pages/instructions/land-between-the-lakes.html">Land Between the Lakes</a>
           </div>
         </div>
 
@@ -63,7 +63,7 @@
           </label>
           <div class="mobile-dropdown-content">
             <a href="https://ultrasignup.com/register.aspx?did=110901" target="_blank">Tunnel Hill 2024</a>
-            <a href="results-tunnel-hill-lifetime.html">Tunnel Hill Lifetime</a>
+            <a href="pages/results/tunnel-hill-lifetime.html">Tunnel Hill Lifetime</a>
             <a href="https://runsignup.com/Race/Results/44821#resultSetId-368809;perpage:100">Land Between the Lakes</a>
           </div>
         </div>
@@ -74,73 +74,65 @@
             Race Photos
           </label>
           <div class="mobile-dropdown-content">
-            <a href="photos-tunnel-hill.html">Tunnel Hill</a>
-            <a href="photos-land-between-the-lakes.html">Land Between the Lakes</a>
-            <a href="photos-strolling-jim.html">Strolling Jim</a>
-            <a href="photos-ruts-corydon.html">RUTS Corydon</a>
-            <a href="photos-ruts-paducah.html">RUTS Paducah</a>
-            <a href="photos-ruts-oak-ridge.html">RUTS Oak Ridge</a>
-            <a href="photos-six-days-dome.html">6 Days in the Dome</a>
+            <a href="pages/photos/tunnel-hill.html">Tunnel Hill</a>
+            <a href="pages/photos/land-between-the-lakes.html">Land Between the Lakes</a>
+            <a href="pages/photos/strolling-jim.html">Strolling Jim</a>
+            <a href="pages/photos/ruts-corydon.html">RUTS Corydon</a>
+            <a href="pages/photos/ruts-paducah.html">RUTS Paducah</a>
+            <a href="pages/photos/ruts-oak-ridge.html">RUTS Oak Ridge</a>
+            <a href="pages/photos/six-days-dome.html">6 Days in the Dome</a>
           </div>
         </div>
 
         <div class="mobile-dropdown has-dropdown-content">
           <input type="checkbox" id="about-us-toggle" />
           <label for="about-us-toggle" class="main-nav-item">
-            About Us
+            More
           </label>
           <div class="mobile-dropdown-content">
-            <a href="">Our Mission</a>
-            <a href="">Partnership</a>
-            <a href="">Giving Back</a>
+            <a href="pages/more/about-us.html">About Us</a>
+            <a href="pages/more/our-mission.html">Our Mission</a>
+            <a href="pages/more/partnerships.html">Partnership</a>
+            <a href="pages/more/giving-back.html">Giving Back</a>
+            <a href="pages/more/sponsors.html">Sponsors</a>
+            <a href="pages/more/contact-us.html">Contact</a>
+            <a href="pages/more/blog.html">News</a>
           </div>
         </div>
-
-        <div class="mobile-dropdown">
-          <div class="main-nav-item"><a class="nav-item" href="#">Sponsors</a></div>
-        </div>
-
-        <div class="mobile-dropdown">
-          <div class="main-nav-item"><a class="nav-item" href="#">Contact</a></div>
-        </div>
-
-        <div class="mobile-dropdown">
-          <div class="main-nav-item"><a class="nav-item" href="#">News</a></div>
-        </div>
-      </nav>
-      
-      
+      </nav> 
+      <!-- End Mobile menu-->
+       
       <!-- Desktop menu -->
       <div class="desktop-menu nav-menu">
         <div class="dropdown">
-          <a href="">Home</a>
+          <a href="#" tabindex="0">Home</a>
         </div>
-        <div class="dropdown">
-          <a href="pages/our-races.html">Our Races</a>
+        <div class="dropdown" >
+          <a href="pages/our-races.html" tabindex="0">Our Races</a>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" tabindex="0" aria-label="Course Maps and Crew Info dropdown menu">
           <p>Courses Maps/Crew Info</p>
           <div class="dropdown-content">
-            <a href="pages/course-maps.html">Course Maps</a>
-            <a href="pages/aid-and-crew.html">Aid Station & Crew Info</a>
+            <a href="pages/info/course-maps.html" tabindex="0">Course Maps</a>
+            <a href="pages/info/aid-and-crew.html" tabindex="0">Aid Station & Crew Info</a>
           </div>
         </div>   
-        <div class="dropdown">
+        <div class="dropdown" tabindex="0">
           <p>Runner Instructions</p>
           <div class="dropdown-content">
             <a href="pages/instructions/tunnel-hill.html">Tunnel Hill</a>
             <a href="pages/instructions/land-between-the-lakes.html">Land Between the Lakes</a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" tabindex="0">
           <p>Race Results</p>
           <div class="dropdown-content">
             <a href="https://ultrasignup.com/register.aspx?did=110901" target="_blank">Tunnel Hill 2024</a>
-            <a href="pages/results-tunnel-hill-lifetime.html">Tunnel Hill Lifetime</a>
+            <a href="pages/results/tunnel-hill-lifetime.html">Tunnel Hill Lifetime</a>
             <a href="https://runsignup.com/Race/Results/44821#resultSetId-368809;perpage:100">Land Between the Lakes</a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" tabindex="0">
           <p>Race Photos</p>
           <div class="dropdown-content">
             <a href="pages/photos/tunnel-hill.html">Tunnel Hill</a>
@@ -152,7 +144,7 @@
             <a href="pages/photos/six-days-dome.html">6 Days in the Dome</a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown" tabindex="0">
           <p>More</p>
           <div class="dropdown-content">
             <a href="pages/more/about-us.html">About Us</a>
@@ -168,133 +160,131 @@
     </header>
   
     <main>
-      <div id="carousel">
-        <ol class="carousel__viewport" id="slides-container">
-          <li id="carousel__slide1" class="carousel__slide">
+      <div class="carousel-container" id="carousel" aria-label="World Records Gallery">
+        <div class="carousel_items">
+          <div class="carousel_item item1" id="carousel__slide1" aria-label="Camile Harris World Record">
             <img class="record-image" src="images/runners/Camille_record.jpg" width="420" />
-            <p class="record-image-name">Camille Herron</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
+            <p class="record-name">Camille Herron</p>
+            <table class="record-table">
+              <tr class="record-row">
                 <td>Tunnel Hill</td>
                 <td>World Record</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td class="">100 mile</td>
                 <td>Nov 11, 2017</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td>12:42:39</td>
                 <td>7:38 per mile</td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row">
                 <td>
                   Beat the previous record by over an hour
                 </td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row">
                 <td>
                   Outright winner of the race - beating all male competitors
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide4" class="carousel__prev"></a>
-            <a href="#carousel__slide2" class="carousel__next"></a>
-          </li>
-          <li id="carousel__slide2" class="carousel__slide">
+          </div>
+          <div class="carousel_item item2" id="carousel__slide2" aria-label="Charlie Lawrence World Record">
             <img class="record-image" src="images/runners/Charlie_record.jpg" width="420" />
-            <p class="record-image-name">Charlie Lawrence</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
+            <p class="record-name">Charlie Lawrence</p>
+            <table class="record-table">
+              <tr class="record-row">
                 <td>Tunnel Hill</td>
                 <td>World Record</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td class="">50 mile</td>
                 <td>Nov 11, 2023</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td>4:48:21</td>
                 <td>5:46 per mile</td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row record-sentences">
                 <td>
                   Beat the previous record by 107 seconds
                 </td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row record-sentences">
                 <td>
                   Under 5:40 for every mile until mile 25
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide1" class="carousel__prev"></a>
-            <a href="#carousel__slide3" class="carousel__next"></a>
-          </li>
-          <li id="carousel__slide3" class="carousel__slide">
+          </div>
+          <div class="carousel_item item3" id="carousel__slide3" aria-label="Elov Olsson World Record">
             <img class="record-image" src="images/runners/Elov_record_TH.jpg" width="420" />
-            <p class="record-image-name">Elov Olsson</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
+            <p class="record-name">Elov Olsson</p>
+            <table class="record-table">
+              <tr class="record-row">
                 <td>Tunnel Hill</td>
                 <td>World Record</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td class="">100 mile</td>
                 <td>Nov 11, 2023</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td>11:26:19</td>
                 <td>6:52 per mile</td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row record-sentences">
                 <td>
                   New personal best by 66 minutes
                 </td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row record-sentences">
                 <td>
                   The third-fastest 100-miler in history
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide2" class="carousel__prev"></a>
-            <a href="#carousel__slide4" class="carousel__next"></a>
-          </li>
-          <li id="carousel__slide4" class="carousel__slide">
+          </div>
+          <div class="carousel_item item4" id="carousel__slide4" aria-label="Courtney Olsen World Record">
             <img class="record-image" src="images/runners/Courtney_record.jpg" width="420" />
-            <p class="record-image-name">Courtney Olsen</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
+            <p class="record-name">Courtney Olsen</p>
+            <table class="record-table">
+              <tr class="record-row">
                 <td>Tunnel Hill</td>
                 <td>World Record</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td class="">50 mile</td>
                 <td>Nov 9, 2025</td>
               </tr>
-              <tr class="record-image-row">
+              <tr class="record-row">
                 <td>5:31:56</td>
                 <td>6:38 per mile</td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row record-sentences">
                 <td>
                   Beat the previous record by more than eight minutes
                 </td>
               </tr>
-              <tr class="record-image-row record-image-sentences">
+              <tr class="record-row record-sentences">
                 <td>
                   Took the lead 32 miles into the race
                 </td>
               </tr>
             </table>
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide3" class="carousel__prev"></a>
-            <a href="#carousel__slide1" class="carousel__next"></a>
-          </li>
-        </ol>
+          </div>
+        </div>
+        <span id="js_nav">
+          <aside id="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li id="carousel-nav-1" class="carousel__navigation-item"><p class="carousel__navigation-button">Go to slide 1</p></li>
+            <li id="carousel-nav-2" class="carousel__navigation-item"><p class="carousel__navigation-button">Go to slide 2</p></li>
+            <li id="carousel-nav-3" class="carousel__navigation-item"><p class="carousel__navigation-button">Go to slide 3</p></li>
+            <li id="carousel-nav-4" class="carousel__navigation-item"><p class="carousel__navigation-button">Go to slide 4</p></li>
+          </ol>
+        </span>
+        <noscript>
           <aside class="carousel__navigation">
           <ol class="carousel__navigation-list">
             <li id="carousel-nav-1" class="carousel__navigation-item">
@@ -314,177 +304,8 @@
                 class="carousel__navigation-button">Go to slide 4</a>
             </li>
           </ol>
-        </aside>
-
+        </noscript>
       </div>
-
-
-      <!--<div id="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-          <li id="carousel__slide1"
-              tabindex="0"
-              class="carousel__slide">
-            <img class="record-image" src="images/runners/Camille_record.jpg" width="420" />
-            <p class="record-image-name">Camille Herron</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
-                <td>Tunnel Hill</td>
-                <td>World Record</td>
-              </tr>
-              <tr class="record-image-row">
-                <td class="">100 mile</td>
-                <td>Nov 11, 2017</td>
-              </tr>
-              <tr class="record-image-row">
-                <td>12:42:39</td>
-                <td>7:38 per mile</td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  Beat the previous record by over an hour
-                </td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  Outright winner of the race - beating all male competitors
-                </td>
-              </tr>
-            </table>
-            <div id="snapper1" class="carousel__snapper">
-              <a href="#carousel__slide4"
-                class="carousel__prev">Go to last slide</a>
-              <a href="#carousel__slide2"
-                class="carousel__next">Go to next slide</a>
-            </div>
-          </li>
-          <li id="carousel__slide2"
-              tabindex="0"
-              class="carousel__slide">
-            <img class="record-image" src="images/runners/Charlie_record.jpg" width="420" />
-            <p class="record-image-name">Charlie Lawrence</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
-                <td>Tunnel Hill</td>
-                <td>World Record</td>
-              </tr>
-              <tr class="record-image-row">
-                <td class="">50 mile</td>
-                <td>Nov 11, 2023</td>
-              </tr>
-              <tr class="record-image-row">
-                <td>4:48:21</td>
-                <td>5:46 per mile</td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  Beat the previous record by 107 seconds
-                </td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  Under 5:40 for every mile until mile 25
-                </td>
-              </tr>
-            </table>
-            <div id="snapper2" class="carousel__snapper"></div>
-            <a href="#carousel__slide1"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide3"
-              class="carousel__next">Go to next slide</a>
-          </li>
-          <li id="carousel__slide3"
-              tabindex="0"
-              class="carousel__slide">
-            <img class="record-image" src="images/runners/Elov_record_TH.jpg" width="420" />
-            <p class="record-image-name">Elov Olsson</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
-                <td>Tunnel Hill</td>
-                <td>World Record</td>
-              </tr>
-              <tr class="record-image-row">
-                <td class="">100 mile</td>
-                <td>Nov 11, 2023</td>
-              </tr>
-              <tr class="record-image-row">
-                <td>11:26:19</td>
-                <td>6:52 per mile</td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  New personal best by 66 minutes
-                </td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  The third-fastest 100-miler in history
-                </td>
-              </tr>
-            </table>
-            </p>
-            <div id="snapper3" class="carousel__snapper"></div>
-            <a href="#carousel__slide2"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide4"
-              class="carousel__next">Go to next slide</a>
-          </li>
-          <li id="carousel__slide4"
-              tabindex="0"
-              class="carousel__slide">
-            <img class="record-image" src="images/runners/Courtney_record.jpg" width="420" />
-            <p class="record-image-name">Courtney Olsen</p>
-            <table class="record-image-text">
-              <tr class="record-image-row">
-                <td>Tunnel Hill</td>
-                <td>World Record</td>
-              </tr>
-              <tr class="record-image-row">
-                <td class="">50 mile</td>
-                <td>Nov 9, 2025</td>
-              </tr>
-              <tr class="record-image-row">
-                <td>5:31:56</td>
-                <td>6:38 per mile</td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  Beat the previous record by more than eight minutes
-                </td>
-              </tr>
-              <tr class="record-image-row record-image-sentences">
-                <td>
-                  Took the lead 32 miles into the race
-                </td>
-              </tr>
-            </table>
-            <div id="snapper4" class="carousel__snapper"></div>
-            <a href="#carousel__slide3"
-              class="carousel__prev">Go to previous slide</a>
-            <a href="#carousel__slide1"
-              class="carousel__next">Go to first slide</a>
-          </li>
-        </ol>
-        <aside class="carousel__navigation">
-          <ol class="carousel__navigation-list">
-            <li id="carousel-nav-1" class="carousel__navigation-item">
-              <a href="#carousel__slide1"
-                class="carousel__navigation-button">Go to slide 1</a>
-            </li>
-            <li id="carousel-nav-2" class="carousel__navigation-item">
-              <a href="#carousel__slide2"
-                class="carousel__navigation-button">Go to slide 2</a>
-            </li>
-            <li id="carousel-nav-3" class="carousel__navigation-item">
-              <a href="#carousel__slide3"
-                class="carousel__navigation-button">Go to slide 3</a>
-            </li>
-            <li id="carousel-nav-4" class="carousel__navigation-item">
-              <a href="#carousel__slide4"
-                class="carousel__navigation-button">Go to slide 4</a>
-            </li>
-          </ol>
-        </aside>
-      </div> --><!-- Records Carousel -->
 
       
       <div class="main-information">
@@ -541,7 +362,7 @@
             <p>Sep 20, 2025,</p>
             <p>7:00 AM EDT</p>
             <p>Frozen Head State Park</p>
-            <a class="link-button upcoming-race-register-link" href="">
+            <a class="link-button upcoming-race-register-link" href="https://ultrasignup.com/register.aspx?did=119817">
               Register Now
             </a>
           </div>
@@ -553,7 +374,7 @@
             <p>Nov 08, 2025,</p>
             <p>7:00 AM CST</p>
             <p>Vienna City Park</p>
-            <a class="link-button upcoming-race-register-link" href="">
+            <a class="link-button upcoming-race-register-link" href="https://ultrasignup.com/register.aspx?did=122751">
               Register Now
             </a>
           </div>
@@ -565,7 +386,7 @@
             <p>Mar 14, 2026,</p>
             <p>6:30 AM</p>
             <p>Grand Rivers Community Center</p>
-            <a class="link-button upcoming-race-register-link" href="">
+            <a class="link-button upcoming-race-register-link" href="https://runsignup.com/Race/KY/GrandRivers/LandBetweentheLakestrailruns">
               Register Now
             </a>
           </div>

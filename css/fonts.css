@@ -2,25 +2,25 @@
 /* use as a replacement for proxima-n-w01-reg */
 @font-face {
   font-family: 'metropolis';
-  src: url('../fonts/metropolis/Metropolis-Regular.woff2') format('woff2'),
-       url('../fonts/metropolis/Metropolis-Regular.woff') format('woff'),
-       url('../fonts/metropolis/Metropolis-Regular.ttf') format('truetype'),
-       url('../fonts/metropolis/Metropolis-Regular.otf') format('opentype'),
-       url('../fonts/metropolis/Metropolis-Regular.eot') format('embedded-opentype');
+  src: url('./fonts/metropolis/Metropolis-Regular.woff2') format('woff2'),
+       url('./fonts/metropolis/Metropolis-Regular.woff') format('woff'),
+       url('./fonts/metropolis/Metropolis-Regular.ttf') format('truetype'),
+       url('./fonts/metropolis/Metropolis-Regular.otf') format('opentype'),
+       url('./fonts/metropolis/Metropolis-Regular.eot') format('embedded-opentype');
 }
 
 /* Poppins */
 @font-face {
   font-family: 'poppins';
-  src: url('../fonts/poppins/Poppins-Regular.ttf');
+  src: url('./fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: 'poppins-extra-light';
-  src: url('../fonts/poppins/Poppins-ExtraLight.ttf');
+  src: url('./fonts/poppins/Poppins-ExtraLight.ttf');
 }
 
 @font-face {
   font-family: 'poppins-semi-bold';
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+  src: url('./fonts/poppins/Poppins-SemiBold.ttf');
 }

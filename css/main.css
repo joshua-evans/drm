@@ -8,6 +8,10 @@
 	margin: 0;
 }
 
+:focus-visible {
+  outline: 1px red solid;
+}
+
 strong {
   color: #000;
 }
@@ -69,7 +73,7 @@ header, footer {
 
 /* Content order */
 main {
-  margin: 0;
+  margin: 0 0 2rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -98,6 +102,9 @@ main {
 }
 
 @media screen and (width >= 48rem) {
+  main {
+    margin: 0 0 4rem;
+  }
   .main-information {
     flex-direction: row;
   }
