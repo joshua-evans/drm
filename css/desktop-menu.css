@@ -38,7 +38,12 @@ header {
   margin: .5rem 0 .5rem;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content,
+.dropdown:target .dropdown-content,
+.dropdown-content:hover,
+.dropdown-content:focus,
+.dropdown-content:target {
   display: flex;
 }
 

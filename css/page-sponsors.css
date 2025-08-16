@@ -127,7 +127,7 @@ span.discount-code-text p {
     padding: 0;
   }
   #sword-logo {
-    width: 440px;
+    width: 452px;
     height: auto;
     margin: auto;
   }
@@ -135,6 +135,10 @@ span.discount-code-text p {
     height: auto;
     margin: auto;
     width: 50%;
+  }
+  #colson-photo-logo {
+    background-color: grey;
+    padding: 2rem;
   }
   .sponsor-contact-us {
     flex-direction: row;

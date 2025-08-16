@@ -1,34 +1,61 @@
-const changeCssCarouselClass = () => {
-  const slide1 = document.getElementById("snapper1");  
-  slide1.className = 'js__snapper';
-  const slide2 = document.getElementById("snapper2");  
-  slide2.className = 'js__snapper';
-  const slide3 = document.getElementById("snapper3");  
-  slide3.className = 'js__snapper';
-  const slide4 = document.getElementById("snapper4");  
-  slide4.className = 'js__snapper';
+let carouselHovered = false;
+let pauseCarousel = false;
+
+const showCarouselNavigation = () => {
+  const jsCarouselNavigation = document.getElementById("js_nav");
+  jsCarouselNavigation.style.display = "block";
 }
 
-const jsCarousel = () => {
-  const slidesContainer = document.getElementsByClassName("carousel__slide")[0];
-  slidesContainer.computedStyleMap.left = "100px"; 
-  /*const slide1 = document.getElementById("carousel__slide1");
-  const width = slide1.clientWidth;
-  const step = width/100;
-  let stepCount = 1
-  while(stepCount < 100) {
-    slidesContainer.forEach((slide) => {
-      slide.style.left -= 100;
-      stepCount += 1
+const handleCarouselNavigation = () => {
+  const slides = document.getElementsByClassName("carousel__navigation-item");
+  const carouselItems = document.querySelectorAll(".carousel_item");
+
+  Array.from(slides).forEach((slide, index) => {
+    slide.addEventListener("click", () => {
+      pauseCarousel = true;
+      Array.from(carouselItems).forEach((item) => {
+        item.style.transform = `translateX(-${index*100}%)`
+      });
     })
-  }*/
+  });
 }
 
+const runCarousel = () => {
+  let i = 1;
+  
+  const carouselItems = document.querySelectorAll(".carousel_item"); 
+  setInterval(() => {
+    const runCarousel = !carouselHovered && !pauseCarousel;
+    if (runCarousel) {
+      Array.from(carouselItems).forEach((item) => {
+        if(i < carouselItems.length){
+          console.log(item);
+          item.style.transform = `translateX(-${i*100}%)`
+        }
+      });
+       
+      if(i < carouselItems.length){
+        i++;
+      }
+      else{
+        i=0;
+      }
+    }
+  }, 10000)
+  
+}
 
+const stopCarouselOnHover = () => {
+  const carousel = document.getElementById("carousel");
+  carousel.addEventListener("mouseover", () => {
+    carouselHovered = true;
+  });
+  carousel.addEventListener("mouseout", () => {
+    carouselHovered = false;
+  });
+}
 
-
-
-
-
-changeCssCarouselClass();
-jsCarousel();
+showCarouselNavigation()
+runCarousel();
+stopCarouselOnHover();
+handleCarouselNavigation();
