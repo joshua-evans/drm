@@ -22,6 +22,10 @@ main {
 .about-us-section p:last-of-type {
   margin-top: 1rem;
 }
+#laz-text {
+  font-family: "poppins", sans-serif;
+  margin: 2rem 0 0;
+}
 
 .about-us-section ul {
   margin: 1rem 3rem 1rem 0;
@@ -34,7 +38,7 @@ main {
 }
 
 .race-director-section {
-  margin: 3rem 0 2rem;
+  margin: 3rem 0 4rem;
 }
 
 .race-director-section img {
@@ -135,7 +139,7 @@ main {
 @media screen and (width > 48rem) {
   .about-us-container {
     flex-direction: row;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 3rem;
   }
   .about-us-section {
     width: 50%;
