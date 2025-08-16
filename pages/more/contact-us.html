@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/footer.css" />
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/page-contact-us.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicons/favicon_16_16.png">
+    <link rel="icon" type="image/x-icon" href="../../images/favicons/favicon_16_16.png">
     <title>Contact Us | Durbin Race Management</title>
   </head>
   <body>
@@ -25,7 +25,7 @@
       <nav class="mobile-menu">
 
         <div class="mobile-dropdown">
-          <div class="main-nav-item"><a class="nav-item" href="#">Home</a></div>
+          <div class="main-nav-item"><a class="nav-item" href="../../index.html">Home</a></div>
         </div>
 
         <div class="mobile-dropdown">
@@ -177,7 +177,15 @@
             </div>
           </div>
           
-          <div><p>Email: SomeEmail@email.com</p></div>
+          <div>
+            <form action="contact.php" method="POST">
+              <input type="text" name="name" autocomplete="given-name" placeholder="Name" maxlength="100">
+              <input type="text" name="email" autocomplete="email" placeholder="Email" maxlength="100">
+              <input type="text" name="subject" placeholder="Subject" maxlength="100">
+              <textarea name="message" placeholder="Message"></textarea>
+              <input type="submit" class="link-button">
+            </form>
+          </div>
         </div>
 
       </div> <!-- main information -->
