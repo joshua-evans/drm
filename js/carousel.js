@@ -60,32 +60,26 @@ const handleMobileSwipe = () => {
   const carousel = document.getElementById("carousel");
   carousel.addEventListener("touchstart", (event) => {
     startX = event.touches[0].screenX;
+    pauseCarousel = true;
   });
   carousel.addEventListener("touchend", (event) => {
     const endX = event.changedTouches[0].screenX;
     const carouselItems = document.querySelectorAll(".carousel_item"); 
     if(startX < endX) {
-      console.log("SWIPE RIGHT");
       slideIndex -= 1;
       if(slideIndex < 0) {
         slideIndex = carouselItems.length-1;
       }
-      Array.from(carouselItems).forEach((item) => {
-        item.style.transform = `translateX(-${slideIndex*100}%)`
-      });
     } else {
-      console.log("SWIPE LEFT");
-      console.log("OLD ", slideIndex);
       slideIndex += 1;
       if(slideIndex === carouselItems.length) {
         slideIndex = 0;
       }
-      console.log("NEW ", slideIndex);
-      Array.from(carouselItems).forEach((item) => {
-        item.style.transform = `translateX(-${slideIndex*100}%)`
-      });
-
     }
+    Array.from(carouselItems).forEach((item) => {
+      item.style.transform = `translateX(-${slideIndex*100}%)`
+    });
+    setInterval(() => pauseCarousel = false, 30000);
   });
 }
 
