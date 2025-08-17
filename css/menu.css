@@ -1,5 +1,4 @@
 /* Hamburger Menu */
-
 header {
   margin-top: 1rem;
 }
@@ -55,18 +54,7 @@ header {
   position: absolute;
   transition: all 0.2s ease-out;
 }
-.mobile-menu {
-  grid-area: nav;
-  max-width: unset;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .menu-btn:not(:checked) ~ .mobile-menu {
   visibility: hidden;
@@ -74,16 +62,27 @@ header {
   height: 0;
 }
 
-.menu-btn:checked ~ .mobile-menu {
+.mobile-menu {
   max-height: 100%;
-  position: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding-top: 3rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   align-items: center;
-  padding-top: 3.5rem;
-  overflow-y: auto;
-  z-index: 998;
+  transition: ease 500ms;
   top: 0;
+  position: fixed;
+  z-index: 998;
+}
+
+.menu-btn:checked ~ .mobile-menu {
+  overflow-y: auto;
+  transition: ease 500ms;
 }
 
 .menu-btn:checked ~ .menu-icon .navicon {
@@ -111,6 +110,14 @@ header {
   padding: 0rem 0;
   /* border: 1px solid #eee; */
   /* padding: 0; */
+}
+
+.mobile-dropdown:last-of-type {
+  margin-bottom: 4rem;
+}
+
+.mobile-dropdown:last-of-type a:last-of-type {
+  margin-bottom: 4rem;
 }
 
 .mobile-dropdown-content {
